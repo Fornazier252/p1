@@ -1,7 +1,8 @@
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import Image from 'next/image';
 
-import '@splidejs/splide/css';
+import '@splidejs/splide/css/sea-green';
+
 
 import Client1 from './../img/client-1.png'
 import Client2 from './../img/client-2.png'
@@ -17,10 +18,15 @@ export default function Slide() {
     <Splide options={{
       perPage: 4,
       autoplay: true,
-      gap: '40px',
+      gap: '80px',
       type: "loop",
+      breakpoints:{
+        768: {
+          perPage: 2
+        }
+      }
     }}
-    className="max-w-[80%] m-auto "
+    className="max-w-[80%] m-auto mobile:max-w-[100%]"
     >
       <SplideSlide>
         <Image src={Client1} alt="client 1"/>
