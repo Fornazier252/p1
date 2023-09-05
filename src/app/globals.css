@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#bgc {
+  background-color: #11111188;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  font-family: 'poppins', sans-serif;
+}
+
+p{
+  font-family: 'montserrat', sans-serif;
+}
