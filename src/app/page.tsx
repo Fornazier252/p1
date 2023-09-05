@@ -1,8 +1,6 @@
 "use client"
 
 import Ambev from './../img/Ambev-reproducao-ambevtech.jpg'
-import BsCheckAll from 'react-icons/Bs'
-
 import Ambev2 from './../img/Ambevvv.png'
 import Ambev3 from './../img/ge-ter-3.jpg'
 import Image from 'next/image'
