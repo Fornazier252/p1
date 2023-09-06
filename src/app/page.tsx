@@ -15,7 +15,10 @@ import { FaTelegramPlane } from 'react-icons/fa'
 import { GiBuyCard } from 'react-icons/gi'
 import { MdDateRange } from 'react-icons/md'
 
+import img from './../img/whatsapp.png'
+
 import home from './../img/cta-bg.jpg'
+import Link from 'next/link'
 
 export default function Page() {
 
@@ -26,7 +29,9 @@ export default function Page() {
           <h2 className='font-semibold text-3xl'>GP<span className='text-yellow-500'>.</span></h2>
         </div>
 
-        <button className='border-[1px] border-white border-solid py-1 px-4'>ENTRAR EM CONTATO</button>
+        <Link href="https://api.whatsapp.com/send?phone=5511962093479" >
+          <button className='border-[1px] border-white border-solid py-1 px-4'>ENTRAR EM CONTATO</button>
+        </Link>
       </nav>
 
       <section style={{ backgroundImage: `url(${Ambev.src})` }} className="h-[100vh] w-full bg-center bg-cover bg-no-repeat">
@@ -36,7 +41,9 @@ export default function Page() {
 
           <p className='text-white text-2xl mobile:text-base'>Entre em contato e garanta seu pedido</p>
           <p className='text-white text-2xl mobile:text-base '>SEM FILAS RESERVE AGORA MESMO</p>
-          <p className='text-yellow-500 text-xl mt-4 mobile:text-base'>CLIQUE AQUI PARA CADASTRAR</p>
+          <Link href="https://api.whatsapp.com/send?phone=5511962093479" >
+            <p className='text-yellow-500 text-xl mt-4 mobile:text-base border-2 px-8 border-yellow-500 rounded-md'>CLIQUE AQUI PARA CADASTRAR</p>
+          </Link>
 
           <div className='flex mt-10 gap-x-10 tablet:gap-x-4 mobile:grid mobile:grid-cols-2 mobile:gap-y-3 mobile:gap-x-4 mobile:mt-4'>
             <div className='border-[1px] border-solid border-white px-10 hover:border-yellow-500 text-white font-semibold text-lg transition-all hover:text-yellow-500 mobile:text-base mobile:px-6 mobile:font-medium'>
@@ -165,7 +172,9 @@ export default function Page() {
           <h4 className='text-white  font-semibold text-4xl mb-4 mobile:text-2xl'>Solicite seu pedido aqui</h4>
           <p className='text-white text-xl mb-4 mobile:text-sm'>Reserve um Pedido e retire no mesmo dia, com até 50% OFF somente essa semana</p>
 
-          <button className='text-white mt-6 border-2 border-white border-solid py-4 px-10 rounded-md'>CLIQUE AQUI PARA CADASTRAR</button>
+          <Link href="https://api.whatsapp.com/send?phone=5511962093479" >
+            <button className='text-white mt-6 border-2 border-white border-solid py-4 px-10 rounded-md'>CLIQUE AQUI PARA CADASTRAR</button>
+          </Link>
         </div>
       </section>
 
@@ -182,6 +191,11 @@ export default function Page() {
       </section>
 
       <footer className='text-center bg-black text-white text-base py-3'>
+
+        <div className='fixed bottom-6 right-6 cursor-pointer'>
+          <Image src={img} alt="Whatsapp" width={60} height={60}/>
+        </div>
+
         <p>Todos os direitos reservados aos criadores</p>
       </footer>
     </main>
